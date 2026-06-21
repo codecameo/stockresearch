@@ -38,12 +38,7 @@
   <nav>
     <div class="nav-inner">
       <a href="#" class="nav-logo" aria-label="Thesis home">
-        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="4"  y="20" width="6" height="8" rx="2" fill="#4F9EFF" opacity="0.5"/>
-          <rect x="13" y="13" width="6" height="15" rx="2" fill="#4F9EFF" opacity="0.75"/>
-          <rect x="22" y="4"  width="6" height="24" rx="2" fill="#4F9EFF"/>
-          <circle cx="25" cy="3" r="2.5" fill="#4F9EFF"/>
-        </svg>
+        <img src="assets/app-icon.svg" class="logo-icon" alt="Thesis" width="32" height="32" />
         <span class="nav-wordmark">Thesis</span>
       </a>
 
@@ -82,8 +77,11 @@
         App Store
       </a>
       <a href="#download" class="btn-secondary">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M3.18 23.76c.28.15.6.19.91.12l12.44-12.44L13.07 8l-9.89 15.76zm14.52-13.2L14.44 7.3l2.93-2.93c.46-.46.46-1.21 0-1.67-.46-.46-1.21-.46-1.67 0L12.77 5.63 9.56 2.42C9.1 1.96 8.35 1.96 7.89 2.42c-.46.46-.46 1.21 0 1.67l.94.94L3.06 13.8v.01l3.37 3.37 11.27-6.62zm2.52-1.48c-.5-.87-1.61-1.17-2.48-.67l-.01.01 1.25 1.25c.46.46.46 1.21 0 1.67l-1.07 1.07 1.25 1.25.85-.5c.87-.5 1.17-1.61.67-2.48l-.46-.6z"/>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.57 0.55C1.15 0.8 0.88 1.25 0.88 1.8V22.2C0.88 22.75 1.15 23.2 1.57 23.45L12.75 12.12V11.88L1.57 0.55Z" fill="#4285F4"/>
+          <path d="M16.75 16.12L12.75 12.12V11.88L16.75 7.88L16.87 7.95L21.55 10.62C22.82 11.35 22.82 12.65 21.55 13.38L16.87 16.05L16.75 16.12Z" fill="#FBBC04"/>
+          <path d="M16.87 16.05L12.75 12L1.57 23.45C1.98 23.7 2.52 23.68 3.02 23.39L16.87 16.05Z" fill="#EA4335"/>
+          <path d="M16.87 7.95L3.02 0.61C2.52 0.32 1.98 0.3 1.57 0.55L12.75 12L16.87 7.95Z" fill="#34A853"/>
         </svg>
         Google Play
       </a>
@@ -97,7 +95,7 @@
     <div class="hero-mockup animate-fade-up delay-4">
       <div class="phone-frame">
         <img
-          src="assets/thesis-01-verdict-1284x2778.png"
+          src="assets/screen-01-verdict.png"
           alt="Thesis app — verdict screen showing AMZN BUY with conviction score and fair value"
           class="hero-screenshot"
         />
@@ -119,7 +117,7 @@
       </div>
       <div class="proof-divider"></div>
       <div class="proof-item">
-        <div class="proof-value">$0.25</div>
+        <div class="proof-value">&lt;$1</div>
         <div class="label">First Report</div>
       </div>
       <div class="proof-divider"></div>
@@ -316,21 +314,8 @@
         <div class="screenshot-item">
           <div class="screenshot-phone">
             <img
-              src="assets/thesis-01-verdict-1284x2778.png"
-              alt="Verdict screen — BUY with conviction score, fair value, and margin of safety"
-            />
-          </div>
-          <div class="screenshot-caption">
-            <div class="label">The Verdict</div>
-            <p>One clear verdict on any stock. Buy, hold, or sell — with conviction, fair value, and the bear case on a single card.</p>
-          </div>
-        </div>
-
-        <div class="screenshot-item">
-          <div class="screenshot-phone">
-            <img
-              src="assets/thesis-02-discover-1284x2778.png"
-              alt="Discover screen — trending stocks, 52-week highs and lows"
+              src="assets/screen-04-discover.png"
+              alt="Home screen — trending stocks, 52-week highs and lows"
             />
           </div>
           <div class="screenshot-caption">
@@ -342,7 +327,33 @@
         <div class="screenshot-item">
           <div class="screenshot-phone">
             <img
-              src="assets/thesis-03-pipeline-1284x2778.png"
+              src="assets/screen-02-details.png"
+              alt="Stock details — AMZN price chart with AI analysis summary"
+            />
+          </div>
+          <div class="screenshot-caption">
+            <div class="label">Stock Details</div>
+            <p>Price, fundamentals, the full picture. Live market data and AI analysis sitting side by side — bull case against bear.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-item">
+          <div class="screenshot-phone">
+            <img
+              src="assets/screen-01-verdict.png"
+              alt="Verdict screen — AMZN BUY with conviction score, fair value, and margin of safety"
+            />
+          </div>
+          <div class="screenshot-caption">
+            <div class="label">The Verdict</div>
+            <p>One clear verdict on any stock. Buy, hold, or sell — with conviction, fair value, and the full bear case on a single card.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-item">
+          <div class="screenshot-phone">
+            <img
+              src="assets/screen-05-pipeline.png"
               alt="Pipeline screen — 8-stage analysis running for NVDA"
             />
           </div>
@@ -355,39 +366,13 @@
         <div class="screenshot-item">
           <div class="screenshot-phone">
             <img
-              src="assets/thesis-04-details-1284x2778.png"
-              alt="Stock details — price chart for AMZN with AI analysis summary"
+              src="assets/screen-03-queue.png"
+              alt="Reports in progress — multiple tickers queued and ready"
             />
           </div>
           <div class="screenshot-caption">
-            <div class="label">Stock Details</div>
-            <p>Price, fundamentals, the full picture. Live market data and AI analysis sitting side by side — bull case against bear.</p>
-          </div>
-        </div>
-
-        <div class="screenshot-item">
-          <div class="screenshot-phone">
-            <img
-              src="assets/thesis-05-redteam-1284x2778.png"
-              alt="Pipeline queue screen showing multiple reports ready"
-            />
-          </div>
-          <div class="screenshot-caption">
-            <div class="label">Your Pipeline</div>
+            <div class="label">Your Queue</div>
             <p>Queue it. We'll notify you when it's ready. Run reports on any ticker and come back when the analysis lands.</p>
-          </div>
-        </div>
-
-        <div class="screenshot-item">
-          <div class="screenshot-phone">
-            <img
-              src="assets/thesis-06-watchlist-1284x2778.png"
-              alt="Watchlist screen showing NVDA, AAPL, MSFT with recommendation badges"
-            />
-          </div>
-          <div class="screenshot-caption">
-            <div class="label">Watchlist</div>
-            <p>Track your conviction. Know the moment a report goes stale — and refresh any ticker in a single tap.</p>
           </div>
         </div>
 
@@ -527,8 +512,11 @@
         </a>
 
         <a href="#" class="store-btn">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="#F5F3EE">
-            <path d="M3.18 23.76c.28.15.6.19.91.12l12.44-12.44L13.07 8l-9.89 15.76zm14.52-13.2L14.44 7.3l2.93-2.93c.46-.46.46-1.21 0-1.67-.46-.46-1.21-.46-1.67 0L12.77 5.63 9.56 2.42C9.1 1.96 8.35 1.96 7.89 2.42c-.46.46-.46 1.21 0 1.67l.94.94L3.06 13.8v.01l3.37 3.37 11.27-6.62zm2.52-1.48c-.5-.87-1.61-1.17-2.48-.67l-.01.01 1.25 1.25c.46.46.46 1.21 0 1.67l-1.07 1.07 1.25 1.25.85-.5c.87-.5 1.17-1.61.67-2.48l-.46-.6z"/>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.57 0.55C1.15 0.8 0.88 1.25 0.88 1.8V22.2C0.88 22.75 1.15 23.2 1.57 23.45L12.75 12.12V11.88L1.57 0.55Z" fill="#4285F4"/>
+            <path d="M16.75 16.12L12.75 12.12V11.88L16.75 7.88L16.87 7.95L21.55 10.62C22.82 11.35 22.82 12.65 21.55 13.38L16.87 16.05L16.75 16.12Z" fill="#FBBC04"/>
+            <path d="M16.87 16.05L12.75 12L1.57 23.45C1.98 23.7 2.52 23.68 3.02 23.39L16.87 16.05Z" fill="#EA4335"/>
+            <path d="M16.87 7.95L3.02 0.61C2.52 0.32 1.98 0.3 1.57 0.55L12.75 12L16.87 7.95Z" fill="#34A853"/>
           </svg>
           <div class="store-btn-text">
             <span class="store-btn-sub">Get it on</span>
@@ -543,12 +531,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-logo">
-        <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
-          <rect x="4"  y="20" width="6" height="8" rx="2" fill="#4F9EFF" opacity="0.5"/>
-          <rect x="13" y="13" width="6" height="15" rx="2" fill="#4F9EFF" opacity="0.75"/>
-          <rect x="22" y="4"  width="6" height="24" rx="2" fill="#4F9EFF"/>
-          <circle cx="25" cy="3" r="2.5" fill="#4F9EFF"/>
-        </svg>
+        <img src="assets/app-icon.svg" alt="Thesis" width="28" height="28" />
         <span>Thesis</span>
       </div>
 
