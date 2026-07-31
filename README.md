@@ -1,7 +1,7 @@
 # Thesis — Marketing Site
 
 Marketing landing page for the Thesis AI Stock Research app.
-Hosted via GitHub Pages.
+Hosted on Vercel: https://aistockresearch.vercel.app
 
 ## Structure
 
@@ -15,12 +15,14 @@ stockresearch/
 └── README.md
 ```
 
-## Deploy to GitHub Pages
+## Deploy to Vercel
 
-1. Push this folder to a GitHub repo
-2. Go to **Settings → Pages**
-3. Set source to `main` branch, `/ (root)` or `/docs` folder
-4. Your site will be live at `https://<username>.github.io/<repo-name>/`
+```
+vercel link      # first time only
+vercel deploy --prod
+```
+
+Static site, no build step required.
 
 ## Before publishing
 
