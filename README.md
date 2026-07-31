@@ -1,7 +1,7 @@
 # Thesis — Marketing Site
 
 Marketing landing page for the Thesis AI Stock Research app.
-Hosted on Vercel: https://aistockresearch.vercel.app
+Hosted on Vercel: https://aistockresearch.vercel.app (auto-deploys on push to `main`)
 
 ## Structure
 
