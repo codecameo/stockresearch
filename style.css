@@ -823,6 +823,8 @@ footer {
 /* ── SCREENSHOTS SECTION ── */
 .screenshots-section {
   padding: var(--section-pad);
+  padding-left: 0;   /* strip runs edge to edge; the track has its own inset */
+  padding-right: 0;
   padding-bottom: 0;
   overflow: hidden;
 }
@@ -841,7 +843,7 @@ footer {
 .screenshots-track {
   display: flex;
   gap: 32px;
-  padding: 0 max(24px, calc((100vw - 1160px) / 2));
+  padding: 0 clamp(24px, 4vw, 64px);
   width: max-content;
 }
 
