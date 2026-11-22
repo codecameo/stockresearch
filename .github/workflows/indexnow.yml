@@ -1,0 +1,40 @@
+name: IndexNow
+
+# Vercel posts a deployment status to GitHub when a deploy finishes.
+# On a successful Production deploy, ping IndexNow with only the pages
+# that changed since the previous Production deploy.
+on:
+  deployment_status:
+
+permissions:
+  contents: read
+  deployments: read
+
+jobs:
+  ping:
+    if: >-
+      github.event.deployment_status.state == 'success' &&
+      github.event.deployment.environment == 'Production'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+          fetch-depth: 0
+
+      - name: Find previous Production deploy
+        id: prev
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ github.event.deployment.sha }}
+        run: |
+          PREV=$(gh api "repos/${{ github.repository }}/deployments?environment=Production&per_page=20" \
+            --jq "[.[] | select(.sha != \"$SHA\")][0].sha // empty")
+          if [ -z "$PREV" ] || ! git cat-file -e "$PREV^{commit}" 2>/dev/null; then
+            PREV="$SHA~1"
+          fi
+          echo "Comparing $PREV..$SHA"
+          echo "sha=$PREV" >> "$GITHUB_OUTPUT"
+
+      - name: Ping IndexNow
+        run: ./scripts/indexnow.sh "${{ steps.prev.outputs.sha }}" "${{ github.event.deployment.sha }}"
